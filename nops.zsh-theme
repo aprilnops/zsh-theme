@@ -9,7 +9,7 @@
 YS_VCS_PROMPT_PREFIX1=" %{$fg[white]%}%{$reset_color%} "
 YS_VCS_PROMPT_PREFIX2="%{$fg[cyan]%}"
 YS_VCS_PROMPT_SUFFIX="%{$reset_color%}"
-YS_VCS_PROMPT_DIRTY="%{$fg[red]%}x"
+YS_VCS_PROMPT_DIRTY="%{$fg[red]%}[x]"
 YS_VCS_PROMPT_CLEAN="%{$fg[green]%}[o]"
 
 # Git info
@@ -47,7 +47,7 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 # % ys @ ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] C:0
 # $
 PROMPT="
-%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]%}%n) \
+%(#,%{$bg[blue]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]%}%n) \
 %{$terminfo[bold]$fg[yellow]%}%~%{$reset_color%}\
 ${hg_info}\
 ${git_info}\
